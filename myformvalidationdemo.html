@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+	<title>Form Validation</title>
+</head>
+<body>
+<p>Main Page</p>
+
+<div></div>
+
+<div></div>
+<script>
+function validateForm() {
+var x = document.forms["myForm"]["fname"].value;
+if (x == "") {
+alert("Name must be filled out");
+return false;
+}
+}
+
+function myFunction() {
+  var x, text;
+
+  // Get the value of the input field with id="numb"
+  x = document.getElementById("octime").value;
+
+  // If x is Not a Number or less than one or greater than 10
+  if (isNaN(x) || x < 1 || x > 10) {
+    text = "Input not valid";
+  } else {
+    text = "Input OK";
+  }
+  document.getElementById("output").innerHTML = text;
+}
+
+</script>
+
+<form action="/action_page.php" method="post" name="myForm">
+First-Name: <input name="fname" type="text" /> <input type="button" value="Submit-1" onclick="validateForm()" />
+<p>***********************************************************************</p>
+
+<p>How many years have you been at OC? Enter a number between 1 and 10</p>
+<input id="octime" type="text" /><button onclick="myFunction()" type="button" value="Submit">Submit</button>
+
+<p id="output"></p>
+
+<p>***********************************************************************</p>
+
+<p>Do not enter text but click on submit</p>
+<input name="name" required="" type="text" /> <input type="submit" value="Submit-3" /></form>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE shtml>
+<html >
+<head>
+<title>Brynley Eckley Resume Website</title>
+</head>
+<style>
+html {
+    background-color:rgb(90, 89, 78);
+}
+.content {
+    padding-left:60px;
+    width:680px;
+}
+    
+</style>
+<header>
+    <!--#include virtual="menu.html" --> 
+</header>
+
+
+        
+<div class="content">
+    <h1>Welcome to the Final Website for Brynley Eckley</h1>
+    <p>On the left hand side I have created an expandable menu. 
+    This menu is stored in its own html file and by using php imports I have made it present on all pages. 
+    The advantage of this approach is that any edits to the menu's content only need to be done once, it also creates cleaner code.</p>
+</div>
+
+
+
+</body>
+</html>
