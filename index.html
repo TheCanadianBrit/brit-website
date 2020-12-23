@@ -14,7 +14,13 @@ html {
     
 </style>
 <header>
-    <!--#include virtual="menu.html" --> 
+    <link rel="import" href="menu.html">
+    <script>
+        var doc = document.querySelector('link[rel="import"]').import;
+        // Grab DOM from doc.html's document.
+        var text = doc.querySelector('.menuTitle');
+        document.body.appendChild(text.cloneNode(true));
+    </script>
 </header>
 
 
